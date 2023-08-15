@@ -1,7 +1,11 @@
 import React from 'react';
 import './MainTemplate.module.css';
 
-const MainTemplate: React.FC = ({ children }) => {
+type MainTemplateProps = {
+    children: React.ReactNode;
+};
+
+const MainTemplate: React.FC<MainTemplateProps> = ({ children }) => {
     return (
         <div>
             {children}

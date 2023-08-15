@@ -1,6 +1,6 @@
 import React from 'react';
-import MainTemplate from '../templates/MainTemplate';
-import CartSection from '../organisms/CartSection';
+import MainTemplate from '../../components/templates/MainTemplate/MainTemplate';
+import CartSection from '../../components/organisms/CartSection/CartSection';
 
 const sampleCartItems = [
     { id: 1, title: 'Burger', price: 5.99, quantity: 2 },

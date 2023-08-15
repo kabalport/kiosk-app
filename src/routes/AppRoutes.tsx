@@ -1,16 +1,16 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import HomePage from '../pages/HomePage';
-import CheckoutPage from '../pages/CheckoutPage';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from '../pages/HomePage/HomePage';
+import CheckoutPage from '../pages/CheckoutPage/CheckoutPage';
 
 const AppRoutes: React.FC = () => {
     return (
         <Router>
-            <Switch>
-                <Route path="/" exact component={HomePage} />
-                <Route path="/checkout" component={CheckoutPage} />
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/checkout" element={<CheckoutPage />} />
                 {/* Add more routes as needed */}
-            </Switch>
+            </Routes>
         </Router>
     );
 };

@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { fetchMenu } from '../../services/fakeApi';
+import { useDispatch } from 'react-redux';
+import { addToMenu } from '../../store/actions/menuActions';
 import MainTemplate from '../../components/templates/MainTemplate/MainTemplate';
 import MenuList from '../../components/organisms/MenuList/MenuList';
 
